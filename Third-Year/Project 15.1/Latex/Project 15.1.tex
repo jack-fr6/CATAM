@@ -1,0 +1,133 @@
+\documentclass{article}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage[margin=0.5in]{geometry}
+\usepackage[framed, numbered]{matlab-prettifier}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+\usepackage{graphicx}
+\graphicspath{ {./Images/} }
+\begin{document}
+\title{Primality Testing}
+\maketitle
+\tableofcontents
+\newpage
+\section*{Preface}
+This is my CATAM project, 15.1 for part II. The code for each question can be found in section $5$.
+\newpage
+\section{Trial Division}
+\subsection{Question 1}
+Below are the primes in the intervals $[188000,188200]$ and $[10^9,10^9+200]$. 
+\begin{table}[hp]
+\begin{center}
+\begin{tabular}{|l|}
+\hline
+188011 \\ \hline
+188017 \\ \hline
+188021 \\ \hline
+188029 \\ \hline
+188107 \\ \hline
+188137 \\ \hline
+188143 \\ \hline
+188147 \\ \hline
+188159 \\ \hline
+188171 \\ \hline
+188179 \\ \hline
+188189 \\ \hline
+188197 \\ \hline
+\end{tabular}
+\end{center}
+\caption{Primes between $188000$ and $188200$}
+\end{table}
+\begin{table}[hp]
+\begin{center}
+\begin{tabular}{|l|}
+\hline
+1000000007 \\ \hline
+1000000009 \\ \hline
+1000000021 \\ \hline
+1000000033 \\ \hline
+1000000087 \\ \hline
+1000000093 \\ \hline
+1000000097 \\ \hline
+1000000103 \\ \hline
+1000000123 \\ \hline
+1000000181 \\ \hline
+\end{tabular}
+\end{center}
+\caption{Primes between $10^9$ and $10^9+200$}
+\end{table}
+\section{The Fermat Test}
+\subsection{Question 2}
+Below are tables of the pseudo primes in the intervals $[188000,188200]$ in base $2$ to base $13$.  We don't include a table for pseudo primes in the interval $[10^9,10^9+200]$ since there are none. Note for we exclude $a$ for which there are no pseudo primes base $a$ in the interval. 
+
+
+
+
+\begin{table}[hp]
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{9}{|c|}{\text{Base}}                            \\ \hline
+2      & 3      & 4      & 5      & 7      & 8      & 	9	  & 10     & 12      \\ \hline
+188057 & 188191 & 188057 & 188113  & 188191 & 188057 & 188191 & 188191 & 188191   \\ \hline
+-	   & 	-    & 188191 &    -     &    -    & 	-	 & 	-	  & -  & 	-	   \\ \hline
+\end{tabular}
+\end{center}
+\caption{Pseudo primes between $188000$ and $188200$ in base 2 to base 13}
+\end{table}
+
+
+The complexity of the algorithm is $O(n^2)$. This is because all the loops but 1 are not nested within one another so these are all $O(n)$. The only exception to this is when for each $i^{\text{th}}$ digit of the number $-1$ (in binary) we're testing is $1$ or $0$ and then based on this decide whether or not to include $a^{2^{i-1}}$ in the final product when calculating $a^{p-1}$. Since we do this for each digit this has complexity $O(n^2)$ and hence the complexity of the algorithm is $O(n^2)$.
+
+\newpage
+\subsection{Question 3}
+There are $43$ absolute pseudo primes and $245$ pseudo primes base $2$. in the interval $[2,10^6]$. This tells us that the vast majority of composite numbers in this interval fail the Fermat test to this base.  Further for the remaining composite numbers,  $151$ failed the Fermat test for the base $3$.  On average for (non absolute pseudo prime) composite numbers which passed the Fermat test base 2, it took $2.74$ bases for them to fail the Fermat test and maximally took $10$ bases for any such number to fail the Fermat test.  In short the probability of a composite number being an absolute pseudo prime is very low in this interval,  and the number of bases required to show such is also quite low.
+\section{The Euler Test}
+\subsection{Question 4}
+There are no absolute Euler pseudo primes, this is due to the Solovay-Strassen Theorem which states for any odd $n>2$, $n$ is prime if and only if for all integers $a$ s.t $(a,n)=1$ we have
+\[ \left(\frac{a}{n}\right)=a^{\frac{n-1}2}\pmod n.  \]
+The program found no absolute Euler pseudo primes in the interval $[2,10^6]$ and so agrees with this result.\\\\\
+
+There were 114 composite numbers in $[2,10^6]$ which passed the Euler test for $a=2$ and required further checking,  hence the chance of a composite number passing the Euler test for $a=2$ is lower than that of the Fermat test in this interval.  Interestingly however, the average number of bases needed for a composite number to fail the Euler test, if it passed for $a=2$ was higher than that of the Fermat test. On average such numbers needed to be checked with $3.7$ different bases and maximally took $28$ bases for it to fail the Euler test.
+\section{The Strong Test}
+\subsection{Question 5}
+It is again a fact of number theory that there are no absolute strong pseudo primes.  The program found no absolute strong pseudo primes in the interval $[2,10^6]$ and so agrees with this result.\\\\
+
+This was by far the most efficient and quickest prime tester of the three.  There were only $46$ composite numbers which passed the test for $a=2$ and all of these failed the test for $a=3$.  This is much better than the previous three program.
+
+
+
+
+
+\section{Code}
+\subsection{Question 1}
+\lstinputlisting[style=Matlab-editor]{Q1.m}
+\subsection{Question 2}
+\lstinputlisting[style=Matlab-editor]{Q2.m}
+\subsection{Question 3}
+\lstinputlisting[style=Matlab-editor]{Q3.m}
+\subsection{Question 4}
+\lstinputlisting[style=Matlab-editor]{Q4.m}
+\subsection{Question 5}
+\lstinputlisting[style=Matlab-editor]{Q5.m}
+
+
+
+
+
+
+
+
+
+
+
+\end{document}

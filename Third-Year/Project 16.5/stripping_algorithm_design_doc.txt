@@ -1,0 +1,69 @@
+Input(Pi)
+
+%input(pi_1,pi_2, ... ,pi_k) 
+%Going to have to change input to a matrix with each collumn being a generator 
+
+k=number of pi
+
+n=size(Pi,1)
+
+l=1;
+
+A=zeros(n,n)
+
+while l <= k
+
+	r=1;
+	finish=0;
+	
+	while finish == 0
+	
+		if r~=n
+	
+			if Pi(r,l) ~= r
+		
+				if A(r,Pi(r,l)) == 0
+				
+					A(r,Pi(r,l))=l;
+					finish=1;
+				
+				else
+					
+					pi=Pi(:,A(r,Pi(r,l)));
+					"run invert pi"
+					
+					pia=invpi;
+					pib=pi(:,l);
+					"run multiply pia,pib program"
+					r=r+1;
+			
+				end
+		
+			else
+			
+				r=r+1;
+		
+			end
+		
+		else
+		
+			finish = 1
+		
+		end
+		
+	end
+	l=l+1;
+
+end
+
+
+
+
+			
+			 
+			
+				
+			 		
+	
+	
+	

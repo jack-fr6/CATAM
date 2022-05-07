@@ -1,0 +1,93 @@
+%Calculate T - representatives for coset of G/G_a
+%Equivalent to calculating orbit of a over G 
+%Will get |k| elements in the orbit and |k| permutations g_i which are witness to it
+
+ "Run orbit finding algorithm - need to change output to be a matrix of permutations"
+ 
+ y=number of permutations generating G
+ Y=set of generators of permutations generating G
+ 
+ t=number of permutations witnessing orbit of a
+ T=set of permutations witnessing orbit of a
+ 
+ orbit=set of orbits with less nice witnesses
+ inverseorbit= inverse of orbit(:,1)
+ 
+ yi=1
+ 
+ 
+ stab=zeros(n,y*t)
+ 
+ while yi <= y
+
+	ti=1;
+	
+	while ti<= t
+	
+		
+		%Calculate Y(:,yi)*T(:,ti)
+		
+			pia=Y(:,yi);
+			pib=T(:,ti);
+			
+			"Run timespi program"
+			
+		%Calculate varphi(piapib)
+		
+			
+			nu=inverseorbit(pipiab(a));
+			varphi=T(:,nu);
+		
+		%Calculate inverse of varphi
+		
+			pi=varphi;
+			
+			"run invpi program "
+			
+		%Calculate stab
+		
+			pia=inv;
+			pib=pipiab;
+			
+			"Run timespi program"
+			
+			
+			stab(:,(yi-1)*y+ti)=pipia
+		
+		
+		
+		
+		ti=ti+1;
+	end
+	bi=bi+1;
+end
+
+
+
+"Run stripping algorithm on stab"
+
+
+
+
+
+
+
+
+
+%Modular part:
+%Calculating phi(X*Y)
+
+	Rough sketch of program: 
+		
+		calculate *
+		
+		calculate pi
+		
+		Find which g in T has g(a)=pi(a), then is g
+		
+		Do this by inverting first collumn of orbit vector and then inputting X*Y(a), giving say num
+		
+		Then g will be Y(:,num)
+
+
+

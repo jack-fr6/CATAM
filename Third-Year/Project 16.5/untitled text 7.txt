@@ -1,0 +1,54 @@
+%Finding the size of G
+oldG(:,:,1)=G
+iii=1
+while nontrivorb == 0
+
+
+%Step 1: Reduce generators of G
+
+	G(:,:,iii)=reduced generators of G
+	%call reduced generators G too
+	
+	if G=zeros(n,1)
+		nontrivorb=1;
+	end
+	
+	if nontrivorb==0
+	
+%Step 2: Find non-trivial orbits of G
+
+	pi=G(:,1);
+	i=1;
+	while foundel==0
+		
+		if pi(i)=i
+			i=i+1;
+		else
+		foundel=1;
+		a=i;
+		end
+	end
+	
+
+	
+	
+			Step 3: Find orbit of a
+
+				orb(:,:,iii)=orbit;
+				wit(:,:,iii)=witness;
+	
+				n(iii)=size(orbit,1);
+				
+			Step 4: Find G_a
+			
+			
+			
+			%Step 3 and 4 can be achieved with just stabiliser program
+			
+			G=generators;
+			oldG(:,:,iii+1)=G;
+			
+			%DONT REDUCE GENERATORS OF G yet
+		else
+		end
+end

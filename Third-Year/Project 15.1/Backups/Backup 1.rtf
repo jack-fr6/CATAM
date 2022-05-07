@@ -1,0 +1,199 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2638
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 Courier;\f1\fmodern\fcharset0 Courier-Bold;}
+{\colortbl;\red255\green255\blue255;\red107\green0\blue1;\red0\green0\blue0;\red107\green0\blue1;
+\red0\green0\blue192;\red15\green112\blue1;}
+{\*\expandedcolortbl;;\cssrgb\c50196\c0\c0;\cssrgb\c0\c0\c0;\cssrgb\c50196\c0\c0;
+\cssrgb\c0\c0\c80000;\cssrgb\c0\c50196\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww14580\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf2 \expnd0\expndtw0\kerning0
+\\documentclass\cf3 \{article\}\
+\cf2 \\usepackage\cf3 \{float\}\
+\pard\pardeftab720\partightenfactor0
+
+\fs26 \cf4 \outl0\strokewidth0 \strokec4 \\documentclass\cf0 \strokec3 \{article\}\
+\cf4 \strokec4 \\usepackage\cf0 \strokec3 \{float\}\
+\cf4 \strokec4 \\usepackage\cf0 \strokec3 \{\ul enumitem\ulnone \}\
+\cf4 \strokec4 \\usepackage\cf0 \strokec3 \{hyperref\}\
+\cf4 \strokec4 \\usepackage\cf0 \strokec3 [margin=0.\ul 5in\ulnone ]\{geometry\}\
+\cf4 \strokec4 \\usepackage\cf0 \strokec3 [framed, numbered]\{\ul matlab\ulnone -\ul prettifier\ulnone \}\
+\cf4 \strokec4 \\usepackage\cf0 \strokec3 \{amsfonts\}\
+\cf4 \strokec4 \\usepackage\cf0 \strokec3 \{amsmath\}\
+\cf4 \strokec4 \\hypersetup\cf0 \strokec3 \{\
+    colorlinks,\
+    citecolor=black,\
+    filecolor=black,\
+    linkcolor=black,\
+    urlcolor=black\
+\}\
+\cf4 \strokec4 \\usepackage\cf0 \strokec3 \{graphicx\}\
+\cf4 \strokec4 \\graphicspath\cf0 \strokec3 \{ \{./Images/\} \}\
+\cf5 \strokec5 \\begin\cf0 \strokec3 \{document\}\
+\cf4 \strokec4 \\title\cf0 \strokec3 \{\ul Primality\ulnone  Testing\}\
+\cf4 \strokec4 \\maketitle\cf0 \strokec3 \
+\cf4 \strokec4 \\tableofcontents\cf0 \strokec3 \
+\cf4 \strokec4 \\newpage\cf0 \strokec3 \
+
+\f1\b \cf5 \strokec5 \\section*\{Preface\}
+\f0\b0 \cf0 \strokec3 \
+This is my \ul CATAM\ulnone  project, 15.1 for part II. The code for each question can be found in section \cf6 \strokec6 $N$\cf0 \strokec3 .\
+\cf4 \strokec4 \\newpage\cf0 \strokec3 \
+
+\f1\b \cf5 \strokec5 \\section\{Question 1\}
+\f0\b0 \cf0 \strokec3 \
+Below are the primes in the intervals \cf6 \strokec6 $[188000,188200]$\cf0 \strokec3  and \cf6 \strokec6 $[10^9,10^9+200]$\cf0 \strokec3 . \
+\cf5 \strokec5 \\begin\cf0 \strokec3 \{table\}[\ul hp\ulnone ]\
+\cf5 \strokec5 \\begin\cf0 \strokec3 \{center\}\
+\cf5 \strokec5 \\begin\cf0 \strokec3 \{tabular\}\{\ul |l|\ulnone \}\
+\cf4 \strokec4 \\hline\cf0 \strokec3 \
+188011 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+188017 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+188021 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+188029 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+188107 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+188137 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+188143 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+188147 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+188159 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+188171 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+188179 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+188189 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+188197 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+\cf5 \strokec5 \\end\cf0 \strokec3 \{tabular\}\
+\cf5 \strokec5 \\end\cf0 \strokec3 \{center\}\
+\cf4 \strokec4 \\caption\cf0 \strokec3 \{Primes between \cf6 \strokec6 $188000$\cf0 \strokec3  and \cf6 \strokec6 $188200$\cf0 \strokec3 \}\
+\cf5 \strokec5 \\end\cf0 \strokec3 \{table\}\
+\cf5 \strokec5 \\begin\cf0 \strokec3 \{table\}[\ul hp\ulnone ]\
+\cf5 \strokec5 \\begin\cf0 \strokec3 \{center\}\
+\cf5 \strokec5 \\begin\cf0 \strokec3 \{tabular\}\{\ul |l|\ulnone \}\
+\cf4 \strokec4 \\hline\cf0 \strokec3 \
+1000000007 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+1000000009 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+1000000021 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+1000000033 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+1000000087 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+1000000093 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+1000000097 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+1000000103 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+1000000123 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+1000000181 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+\cf5 \strokec5 \\end\cf0 \strokec3 \{tabular\}\
+\cf5 \strokec5 \\end\cf0 \strokec3 \{center\}\
+\cf4 \strokec4 \\caption\cf0 \strokec3 \{Primes between \cf6 \strokec6 $10^9$\cf0 \strokec3  and \cf6 \strokec6 $10^9+200$\cf0 \strokec3 \}\
+\cf5 \strokec5 \\end\cf0 \strokec3 \{table\}\
+
+\f1\b \cf5 \strokec5 \\section\{Question 2\}
+\f0\b0 \cf0 \strokec3 \
+The program written to carry out the Fermat test can be found at the end of this file in the program section.\
+
+\f1\b \cf5 \strokec5 \\section\{Question 3\}
+\f0\b0 \cf0 \strokec3 \
+\
+Below are tables of the pseudo primes in the intervals \cf6 \strokec6 $[188000,188200]$\cf0 \strokec3  and \cf6 \strokec6 $[10^9,10^9+200]$\cf0 \strokec3  in base \cf6 \strokec6 $2$\cf0 \strokec3  to base \cf6 \strokec6 $13$\cf0 \strokec3 . We do not include the pseudo primes base 0 or 1 in these intervals as all natural numbers are pseudo primes base 1 and none are base 0.\cf4 \strokec4 \\\\\\\\\cf0 \strokec3 \
+\
+\
+\
+\
+\cf5 \strokec5 \\begin\cf0 \strokec3 \{table\}[\ul hp\ulnone ]\
+\cf5 \strokec5 \\begin\cf0 \strokec3 \{center\}\
+\cf5 \strokec5 \\begin\cf0 \strokec3 \{tabular\}\{\ul |l|l|l|l|l|l|l|l|l|l|l|l|\ulnone \}\
+\cf4 \strokec4 \\hline\cf0 \strokec3 \
+\cf4 \strokec4 \\multicolumn\cf0 \strokec3 \{12\}\{\ul |l|\ulnone \}\{\cf4 \strokec4 \\text\cf0 \strokec3 \{Base\}\}                                                                                   \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+2      & 3      & 4      & 5      & 6      & 7      & 8      & 9      & 10     & 11     & 12     & 13     \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+188011 & 188011 & 188011 & 188011 & 188011 & 188011 & 188011 & 188011 & 188011 & 188011 & 188011 & 188011 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+188017 & 188017 & 188017 & 188017 & 188017 & 188017 & 188017 & 188017 & 188017 & 188017 & 188017 & 188017 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+188021 & 188021 & 188021 & 188021 & 188021 & 188021 & 188021 & 188021 & 188021 & 188021 & 188021 & 188021 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+188029 & 188029 & 188029 & 188029 & 188029 & 188029 & 188029 & 188029 & 188029 & 188029 & 188029 & 188029 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+188057 & 188107 & 188057 & 188107 & 188107 & 188107 & 188057 & 188107 & 188107 & 188107 & 188107 & 188107 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+188107 & 188137 & 188107 & 188113 & 188137 & 188137 & 188107 & 188137 & 188137 & 188137 & 188137 & 188137 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+188137 & 188143 & 188137 & 188137 & 188143 & 188143 & 188137 & 188143 & 188143 & 188143 & 188143 & 188143 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+188143 & 188147 & 188143 & 188143 & 188147 & 188147 & 188143 & 188147 & 188147 & 188147 & 188147 & 188147 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+188147 & 188159 & 188147 & 188147 & 188159 & 188159 & 188147 & 188159 & 188159 & 188159 & 188159 & 188159 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+188159 & 188171 & 188159 & 188159 & 188171 & 188171 & 188159 & 188171 & 188171 & 188171 & 188171 & 188171 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+188171 & 188179 & 188171 & 188171 & 188179 & 188179 & 188171 & 188179 & 188179 & 188179 & 188179 & 188179 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+188179 & 188189 & 188179 & 188179 & 188189 & 188189 & 188179 & 188189 & 188189 & 188189 & 188189 & 188189 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+188189 & 188191 & 188189 & 188189 & 188197 & 188191 & 188189 & 188191 & 188191 & 188197 & 188191 & 188197 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+188197 & 188197 & 188191 & 188197 & 0      & 188197 & 188197 & 188197 & 188197 & 0      & 188197 & 0      \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+0      & 0      & 188197 & 0      & 0      & 0      & 0      & 0      & 0      & 0      & 0      & 0      \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+\cf5 \strokec5 \\end\cf0 \strokec3 \{tabular\}\
+\cf5 \strokec5 \\end\cf0 \strokec3 \{center\}\
+\cf4 \strokec4 \\caption\cf0 \strokec3 \{Pseudo primes between \cf6 \strokec6 $188000$\cf0 \strokec3  and \cf6 \strokec6 $188200$\cf0 \strokec3  in base 2 to base 13\}\
+\cf5 \strokec5 \\end\cf0 \strokec3 \{table\}\
+\
+\cf5 \strokec5 \\begin\cf0 \strokec3 \{table\}[\ul hp\ulnone ]\
+\cf5 \strokec5 \\begin\cf0 \strokec3 \{center\}\
+\cf5 \strokec5 \\begin\cf0 \strokec3 \{tabular\}\{\ul |l|l|l|l|l|l|l|l|l|\ulnone \}\
+\cf4 \strokec4 \\hline\cf0 \strokec3 \
+\cf4 \strokec4 \\multicolumn\cf0 \strokec3 \{9\}\{\ul |l|\ulnone \}\{Base\}                                                                                \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+2         & 3         & 4         & 5         & 6         & 7         & 8         & 9         & 10        \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+100000037 & 100000007 & 100000037 & 100000037 & 100000037 & 100000037 & 100000037 & 100000007 & 100000001 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+100000081 & 100000037 & 100000081 & 100000049 & 100000039 & 100000081 & 100000039 & 100000037 & 100000037 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+100000123 & 100000049 & 100000123 & 100000081 & 100000073 & 100000123 & 100000049 & 100000049 & 100000073 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+100000127 & 100000073 & 100000127 & 100000193 & 100000081 & 100000127 & 100000081 & 100000073 & 100000081 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+100000193 & 100000081 & 100000193 & 0         & 0         & 0         & 0         & 100000081 & 100000127 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+0         & 100000127 & 0         & 0         & 0         & 0         & 0         & 100000127 & 0         \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+\cf5 \strokec5 \\end\cf0 \strokec3 \{tabular\}\
+\cf5 \strokec5 \\end\cf0 \strokec3 \{center\}\
+\cf4 \strokec4 \\caption\cf0 \strokec3 \{Pseudo primes between \cf6 \strokec6 $10^9$\cf0 \strokec3  and \cf6 \strokec6 $10^9+200$\cf0 \strokec3  in base 2 to base 10\}\
+\cf5 \strokec5 \\end\cf0 \strokec3 \{table\}\
+\
+\
+\cf5 \strokec5 \\begin\cf0 \strokec3 \{table\}[\ul hp\ulnone ]\
+\cf5 \strokec5 \\begin\cf0 \strokec3 \{center\}\
+\cf5 \strokec5 \\begin\cf0 \strokec3 \{tabular\}\{\ul |l|l|l|\ulnone \}\
+\cf4 \strokec4 \\hline\cf0 \strokec3 \
+\cf4 \strokec4 \\multicolumn\cf0 \strokec3 \{3\}\{\ul |l|\ulnone \}\{Base\}        \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+11        & 12        & 13        \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+100000007 & 100000037 & 100000039 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+100000037 & 100000039 & 100000049 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+100000049 & 100000049 & 100000073 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+100000081 & 100000081 & 100000123 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+100000123 & 0         & 100000127 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+100000127 & 0         & 100000193 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+\cf5 \strokec5 \\end\cf0 \strokec3 \{tabular\}\
+\cf5 \strokec5 \\end\cf0 \strokec3 \{center\}\
+\cf4 \strokec4 \\caption\cf0 \strokec3 \{Pseudo primes between \cf6 \strokec6 $10^9$\cf0 \strokec3  and \cf6 \strokec6 $10^9+200$\cf0 \strokec3  in base 11 to base 13\}\
+\cf5 \strokec5 \\end\cf0 \strokec3 \{table\}\
+The complexity of the algorithm is \cf6 \strokec6 $O(n^2)$\cf0 \strokec3 . This is because all the loops but 1 are not nested within one another so these are all \cf6 \strokec6 $O(n)$\cf0 \strokec3 . The only exception to this is when for each \cf6 \strokec6 $i^\{\\text\{th\}\}$\cf0 \strokec3  digit of the number \cf6 \strokec6 $-1$\cf0 \strokec3  (in binary) we're testing is \cf6 \strokec6 $1$\cf0 \strokec3  or \cf6 \strokec6 $0$\cf0 \strokec3  and then based on this decide whether or not to include \cf6 \strokec6 $a^\{2^\{i-1\}\}$\cf0 \strokec3  in the final product when calculating \cf6 \strokec6 $a^\{p-1\}$\cf0 \strokec3 . Since we do this for each digit this has complexity \cf6 \strokec6 $O(n^2)$\cf0 \strokec3  and hence the complexity of the algorithm is \cf6 \strokec6 $O(n^2)$\cf0 \strokec3 .\
+\cf4 \strokec4 \\newpage\cf0 \strokec3 \
+
+\f1\b \cf5 \strokec5 \\section\{Question 4\}
+\f0\b0 \cf0 \strokec3 \
+The Euler \ul pseudoprimes\ulnone  base \cf6 \strokec6 $2$\cf0 \strokec3  up to \cf6 \strokec6 $10^6$\cf0 \strokec3  can be found in the table below. There are no absolute euler \ul pseudoprimes\ulnone , this is due to the \ul Solovay\ulnone -\ul Strassen\ulnone  Theorem which states for any odd \cf6 \strokec6 $n>2$\cf0 \strokec3 , \cf6 \strokec6 $n$\cf0 \strokec3  is prime if and only if for all integers \cf6 \strokec6 $a$\cf0 \strokec3  s.t \cf6 \strokec6 $(a,n)=1$\cf0 \strokec3  we have\
+\cf6 \strokec6 \\[ \\left(\\frac\{a\}\{n\}\\right)=a^\{\\frac\{n-1\}2\}\\pmod n.  \\]\cf0 \strokec3 \
+Which further implies that we need to check every \cf6 \strokec6 $a$\cf0 \strokec3  which is \ul coprime\ulnone  to \cf6 \strokec6 $N$\cf0 \strokec3  in order to determine it's \ul primality\ulnone .\
+ \cf5 \strokec5 \\begin\cf0 \strokec3 \{table\}[\ul hp\ulnone ]\
+ \cf5 \strokec5 \\begin\cf0 \strokec3 \{center\}\
+\cf5 \strokec5 \\begin\cf0 \strokec3 \{tabular\}\{\ul |l|l|l|l|l|l|\ulnone \}\
+\cf4 \strokec4 \\hline\cf0 \strokec3 \
+561   & 30121  & 115921 & 266305 & 486737 & 721801 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+1105  & 33153  & 126217 & 271951 & 488881 & 741751 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+1729  & 34945  & 129921 & 278545 & 489997 & 745889 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+1905  & 41041  & 130561 & 280601 & 493697 & 748657 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+2047  & 42799  & 149281 & 294409 & 514447 & 800605 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+2465  & 46657  & 158369 & 314821 & 526593 & 818201 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+3277  & 49141  & 162401 & 323713 & 530881 & 825265 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+4033  & 52633  & 164737 & 334153 & 552721 & 838201 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+4681  & 62745  & 172081 & 340561 & 580337 & 838861 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+6601  & 65281  & 188057 & 348161 & 588745 & 841681 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+8321  & 74665  & 196093 & 357761 & 625921 & 852481 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+8481  & 75361  & 208465 & 390937 & 635401 & 852841 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+10585 & 80581  & 215265 & 399001 & 647089 & 873181 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+12801 & 85489  & 220729 & 410041 & 656601 & 875161 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+15841 & 87249  & 223345 & 427233 & 658801 & 877099 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+16705 & 88357  & 233017 & 448921 & 665281 & 916327 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+18705 & 90751  & 252601 & 449065 & 670033 & 976873 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+25761 & 104653 & 253241 & 458989 & 683761 & 983401 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+29341 & 113201 & 256999 & 476971 & 711361 & 997633 \cf4 \strokec4 \\\\\cf0 \strokec3  \cf4 \strokec4 \\hline\cf0 \strokec3 \
+\cf5 \strokec5 \\end\cf0 \strokec3 \{tabular\}\
+\cf5 \strokec5 \\end\cf0 \strokec3 \{center\}\
+\cf4 \strokec4 \\caption\cf0 \strokec3 \{Euler \ul pseudoprimes\ulnone  base \cf6 \strokec6 $2$\cf0 \strokec3  up to \cf6 \strokec6 $10^6$\cf0 \strokec3 \}\
+\cf5 \strokec5 \\end\cf0 \strokec3 \{table\}\
+\
+\
+\
+\
+\cf5 \strokec5 \\end\cf0 \strokec3 \{document\}\
+}
